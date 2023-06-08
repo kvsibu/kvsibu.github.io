@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etn Course</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
@@ -22,17 +22,16 @@
                     <li><a href="">ABOUT</a></li>
                     <li><a href="">LEARNING</a></li>
                     <li><a href="">GALLERY</a></li>
-                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="openMenu()"></i>
         </nav>
+
         <div class="text-box">
             <h1>KV Sibu ETN Course</h1>
-            <p>Bidang dimana pelajar memahami dengan lebih mendalam atur cara peralatan eletronik
-            </p>
+            <p>Bidang dimana pelajar memahami dengan lebih mendalam atur cara peralatan eletronik</p>
             <a href="https://www.facebook.com/profile.php?id=100080287494460" target="_blank" class="fb">Layari Facebook untuk info terkini</a>
-
         </div>
 
     </section>
@@ -55,9 +54,47 @@
                     protoype pcb dan sistem arduino micro controller <br> menggunakan C++ programming language </p>
             </div>
     </div>
+</section>
+
+
+<!---Comment i guess------>
+<section class="comment">
+    <h1>Ulasan pelajar</h1>
+
+    <div class="row">
+        <div class="comment-col">
+            <img src="images/hakim.jpeg">
+                      <div>
+                        <p>Belajar disini amatlah mudah difahami dan<br>cikgu juga Baik</p>
+                        <h3>Amirul Hakim</h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                      </div>
+        </div>
+
+        <div class="comment-col">
+            <img src="images/anon.png">
+                      <div>
+                        <p>Pelajaran merangkumi semua yang diperlukan untuk <br> melangkah  waktu kerja nanti</p>
+                        <h3>Awang Asril(ADMIN) </h3>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                      </div>
+        </div>
 
 
 
+
+
+
+
+    </div>
 
 
 </section>
@@ -87,14 +124,17 @@
 
 <!--Javascript for toggle button bar-->
 <script>
+
+    var menu = document.getElementById("Navlinks")
+
     function openMenu() {
-        var toggle = document.getElementById("Navlinks");
-        toggle.style.right = "0";
+
+        menu.style.right = "0";
     }
 
     function hideMenu() {
-        var toggle = document.getElementById("Navlinks");
-        toggle.style.right = "-200px";
+
+        menu.style.right = "-200px";
     }
 </script>
 
